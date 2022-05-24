@@ -1,2 +1,2 @@
-# infrastructure-aws-control-tower-account-factory
-Infrastructure AWS Control Tower Account Factory
+# aft-control-tower
+Account Factory Terraform - Control Tower
