@@ -15,7 +15,7 @@ module "aft" {
   tf_backend_secondary_region = var.tf_backend_secondary_region
   # VCS Vars
   vcs_provider                                  = "github"
-  account_request_repo_name                     = "ExampleOrg/example-repo-1"
-  global_customizations_repo_name               = "ExampleOrg/example-repo-2"
-  account_customizations_repo_name              = "ExampleOrg/example-repo-3"
+  account_request_repo_name                     = "${var.github_username}/aft-account-requests"
+  global_customizations_repo_name               = "${var.github_username}/aft-global-customizations"
+  account_customizations_repo_name              = "${var.github_username}/aft-account-customizations"
 }

@@ -1,6 +1,6 @@
 # Account Factory Terraform - Control Tower
 
-Account Factory for Terraform is a Terraform module maintained by the AWS Control Tower team built to automate the process of account creation, provisioning, and governance.
+Account Factory for Terraform is a Terraform module maintained by the AWS Control Tower (CT) team built to automate the process of account creation, provisioning, and governance.
 
 <img src="https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/11/12/aws-control-tower-account-factory-for-terraform-diagram.png" alt="aws-control-tower-account-factory-for-terraform-diagram" width="600"/>
 
@@ -20,8 +20,25 @@ Before launching AFT, you need to have a working AWS Control Tower landing zone 
 
 The initial set up will walk you through creating 2 news OUs: a required "Foundational" OU (default name is "Security") and an optional OU (default name is "Sandbox"). Change the optional OU name to "Management" because we can create an OU for sandbox whenever we want but we'll need a seperate dedicated OU for managing and orchestrating AFT instructions for the following steps. 
 
-> Note: If you need to decommission the landing zone later on, make sure you delete its child organizations and accounts before. Otherwise, you'll have to contact support to do it after!
+    Note: If you need to decommission the landing zone later on follow these steps to save yourself a ton of headache...
+    
+    Do the following BEFORE decommissioning (in order!):      
+    1. Log into the managing accounts for one of the non-root OUs
+    2. Add payment information 
+    3. Verify phone number 
+    4. Delete the "Provisioned Products" from AWS Service Catalog
+    5. Deactivate account
+    6. Remove account from the OU
+    7. Delete the other non-root OUs (go through steps 1-7 for each OU)
 
+    Do the following AFTER deecomissioning (some manual cleanup is required to launch a new landing zone):
+    1. Delete the CloudWatch Logs log group: aws-controltower/CloudTrailLogs 
+    2. The two S3 buckets with reserved names for logs must be removed, or renamed.
+    3. Optional: delete the AWS Single Sign-On (AWS SSO) configuration for AWS Control Tower
+    4. Optional: Remove the VPC created by AWS Control Tower, and remove the associated AWS CloudFormation stack set.
+    5. Before you can set up an AWS Control Tower landing zone in a different home Region, you also must run the command `aws organizations disable-aws-service-access --service-principal controltower.amazonaws.com`.
+
+    
 **Step 2**: Create an Account for the Management OU via Service Catalog
 
 - Step 2.1: Go to AWS Service Catalog
