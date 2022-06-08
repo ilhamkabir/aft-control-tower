@@ -1,10 +1,10 @@
-variable "github_username" {}
-
+variable "github_username" {
+  type    = string
+  default = "ilhamkabir"
+}
 variable "aws_access_key" {}
 
 variable "aws_secret_key" {}
-
-variable "account_id" {}
 
 variable "aws_region" {
   type    = string
