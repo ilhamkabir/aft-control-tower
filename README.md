@@ -2,7 +2,7 @@
 
 Account Factory for Terraform is a Terraform module maintained by the AWS Control Tower (CT) team built to automate the process of account creation, provisioning, and governance.
 
-## About This Repository
+## Purpose
 
 The script in this repository is used only once for initial installation and setup of AFT. Organization Units and Gaurdrails are created and provisioned by the repositories in Step 4 of the instructions below. 
 
