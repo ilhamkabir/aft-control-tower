@@ -10,6 +10,7 @@ module "aft" {
   # VCS Vars
   vcs_provider                                  = "github"
   account_request_repo_name                     = "${var.github_username}/aft-account-requests"
+  account_provisioning_customizations_repo_name = "${var.github_username}/aft-account-provisioning-customizations"
   global_customizations_repo_name               = "${var.github_username}/aft-global-customizations"
   account_customizations_repo_name              = "${var.github_username}/aft-account-customizations"
 }

@@ -4,10 +4,18 @@ Account Factory for Terraform is a Terraform module maintained by the AWS Contro
 
 ## Purpose
 
-The script in this repository is used only once for initial installation and setup of AFT. Organization Units and Gaurdrails are created and provisioned by the repositories in Step 4 of the instructions below. 
+The script in this repository is used only once for initial installation and setup of AFT. Organization Units and Gaurdrails are created and provisioned by the companion repos below (created in Step 4). 
 
 AFT Diagram:
 <img src="https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/11/12/aws-control-tower-account-factory-for-terraform-diagram.png" alt="aws-control-tower-account-factory-for-terraform-diagram" width="600"/>
+
+## Companion Repos
+
+| Name | Description |
+|------|------|
+| [aft-account-requests](https://github.com/ilhamkabir/aft-account-requests) |  |
+| [aft-global-customizations](https://github.com/ilhamkabir/aft-global-customizations) |  |
+| [aft-account-customizations](https://github.com/ilhamkabir/aft-account-customizations) |  |
 
 ## AWS Resource Glossary
 
