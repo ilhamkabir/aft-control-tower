@@ -37,7 +37,8 @@ Control Tower will use the "AWSControlTowerAdmin" IAM role to set up the Landing
 - AWSOrganizationsFullAccess
 - AWSControlTowerServiceRolePolicy
 
-> Note: These policies should be there as default but when I decomissioned the Landing Zone, it took off the policies: "AWSOrganizationsFullAccess" and "AWSControlTowerServiceRolePolicy".
+> `126789op[]oiuytre    1230-=
+'0  `: These policies should be there as default but when I decomissioned the Landing Zone, it took off the policies: "AWSOrganizationsFullAccess" and "AWSControlTowerServiceRolePolicy".
 
 **Step 2**: Launch your AWS Control Tower Landing Zone
 
