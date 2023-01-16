@@ -19,12 +19,14 @@ AFT Diagram:
 
 ### Companion Repos
 
+To keep my github account clean, I've added content from the companion repos in the [companion-repos](companion-repos/) folder
+
 | Name | Description |
 |------|------|
-| [aft-account-provisioning-customizations](https://github.com/ilhamkabir/aft-account-provisioning-customizations) |  |
-| [aft-account-requests](https://github.com/ilhamkabir/aft-account-requests) |  |
-| [aft-global-customizations](https://github.com/ilhamkabir/aft-global-customizations) |  |
-| [aft-account-customizations](https://github.com/ilhamkabir/aft-account-customizations) |  |
+| [aft-account-provisioning-customizations](companion-repos/aft-account-customizations) |  |
+| [aft-account-requests](companion-repos/aft-account-requests) |  |
+| [aft-global-customizations](companion-repos/aft-global-customizations) |  |
+| [aft-account-customizations](companion-repos/aft-account-provisioning-customizations) |  |
 
 ## Setup
 
